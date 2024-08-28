@@ -23,7 +23,7 @@ export default function page() {
   }
   return (
     <>
-      {/* <RenderAdminLogin /> */}
+      <RenderAdminLogin />
       {
         isblock ? <div className='w-full h-full border flex justify-center relative'>
           <div className="w-64 h-[84vh] bg-[#f0ecff] fixed left-16">
