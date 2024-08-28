@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+    @apply bg-[#6842ff] text-white hover:bg-[#7154e7]
+}
+
+.my-shadow {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.circle {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+
+}
+
+.myScrollBar {
+    width: 100%;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+
+.myScrollBar::-webkit-scrollbar {
+    border: 1px solid transparent;
+}
+
+.scrollbarSet::-webkit-scrollbar {
+    border: 1px solid transparent;
+}
+
+.no-select {
+    user-select: none;
+    /* For modern browsers */
+    -webkit-user-select: none;
+    /* For Safari */
+    -moz-user-select: none;
+    /* For Firefox */
+    -ms-user-select: none;
+    /* For Internet Explorer/Edge */
+}
+
+.content-div h2 {
+    font-size: 24px;
+    margin-bottom: -0.28em;
+    margin-top: 0.25em;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.content-div p {
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.003em;
+}
+
+.content-div p{
+    color: #6842ff;
+}
+
+/* Add this CSS to your stylesheet */
+@keyframes slideUp {
+    0% {
+        transform: translateY(8%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.modal-content {
+    animation: slideUp 0.2s ease-out;
+}
+
+@keyframes countdownAnimation {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.5);
+      opacity: 0.5;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
